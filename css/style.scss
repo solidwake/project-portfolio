@@ -7,7 +7,7 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #10d3cc;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -77,3 +77,35 @@ section {
     transform: translateY(0) scale(1);
 }
 
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .active-btn {
+        transition: all .4s ease-in-out;
+        i {
+            color: var(--color-secondary) !important;
+        }
+    }
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2.5rem 0;
+        i {
+            font-size: 2rem;
+            color: var(--color-grey-2);
+            pointer-events: none;
+        }
+    }
+}
