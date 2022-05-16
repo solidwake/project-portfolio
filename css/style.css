@@ -274,21 +274,9 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
-}
-
-.about-container:hover {
-  cursor: default;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  border-radius: 5px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
-          box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+  padding-bottom: 3rem;
 }
 
 .about-container h4 {
@@ -297,14 +285,38 @@ section {
 }
 
 .about-container p {
-  margin-top: 1rem;
+  margin-top: .5rem;
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
 }
 
-svg {
+.skills-container .my-skills {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-grey-1);
+  margin-bottom: 1rem;
+}
+
+.tech-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tech-skills svg {
   width: 72px;
   height: 72px;
+}
+
+.tech-skills p {
+  text-align: center;
+  color: var(--color-grey-1);
 }
 /*# sourceMappingURL=style.css.map */
