@@ -144,7 +144,7 @@ section {
             }
         }
         p {
-            margin: 1.5rem;
+            margin-top: 1.5rem;
             line-height: 2rem;
         }
     }
@@ -226,5 +226,66 @@ section {
     p {
         text-align: center;
         color: var(--color-grey-1);
+    }
+}
+
+.portfolio-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-grey-1);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    .portfolio-items {
+        position: relative;
+        border-radius: 15px;
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        .hover-items {
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+                font-size: 1.5rem;
+                color: var(--color-white);
+                margin-bottom: 1.5rem;
+            }
+            .icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: .5rem;
+                    cursor: pointer;
+                    transition: all .4s ease-in-out;
+                    &:hover i {
+                        color: var(--color-black);
+                        transition: all .4s ease-in-out;
+                    }
+                }
+            }
+        }
     }
 }
