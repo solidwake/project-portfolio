@@ -20,6 +20,8 @@
     --br-sm-2: 14px; 
 }
 
+
+
 body {
     background-color: var(--color-primary);
     font-family: 'Rubik', sans-serif;
@@ -119,6 +121,21 @@ section {
             color: var(--color-grey-2);
             pointer-events: none;
         }
+    }
+}
+
+.theme-button {
+    top: 5%;
+    right: 3%;
+    color: var(--color-grey-2);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s ease-in-out;
+    &:active {
+        transform: translateY(-3px);
     }
 }
 

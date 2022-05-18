@@ -30,6 +30,12 @@ function activePage() {
             element.classList.add('active');
         }
     })
+    //Theme toggle
+    const themeButton = document.querySelector('.theme-button');
+    themeButton.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('light-mode')
+    })
 }
 
 activePage();
