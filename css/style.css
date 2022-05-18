@@ -21,6 +21,20 @@
   --br-sm-2: 14px;
 }
 
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #10d3cc;
+  --color-white: #191d2b;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: 'Rubik', sans-serif;
@@ -28,6 +42,11 @@ body {
   color: var(--color-white);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+body .main-content {
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
 }
 
 a {
