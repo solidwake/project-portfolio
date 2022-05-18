@@ -19,13 +19,12 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
   background-color: var(--color-primary);
   font-family: 'Rubik', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: var(--color-white);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -274,7 +273,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-top: 2rem;
   padding-top: 3.5rem;
   padding-bottom: 3rem;
 }
@@ -289,6 +287,10 @@ section {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
+}
+
+.skills-container {
+  padding-top: 2rem;
 }
 
 .skills-container .my-skills {
@@ -316,6 +318,7 @@ section {
 }
 
 .tech-skills p {
+  font-size: 1rem;
   text-align: center;
   color: var(--color-grey-1);
 }
@@ -329,7 +332,7 @@ section {
   text-align: center;
 }
 
-.portfolios {
+.portfolio-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -338,12 +341,12 @@ section {
   margin-top: 2rem;
 }
 
-.portfolios .portfolio-items {
+.portfolio-container .portfolio-items {
   position: relative;
   border-radius: 15px;
 }
 
-.portfolios .portfolio-items img {
+.portfolio-container .portfolio-items img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
@@ -351,7 +354,7 @@ section {
   border-radius: 15px;
 }
 
-.portfolios .portfolio-items .hover-items {
+.portfolio-container .portfolio-items .hover-items {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
@@ -379,13 +382,13 @@ section {
   transition: all .4s ease-in-out;
 }
 
-.portfolios .portfolio-items .hover-items h3 {
+.portfolio-container .portfolio-items .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
 
-.portfolios .portfolio-items .hover-items .icons {
+.portfolio-container .portfolio-items .hover-items .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +400,7 @@ section {
           align-items: center;
 }
 
-.portfolios .portfolio-items .hover-items .icons .icon {
+.portfolio-container .portfolio-items .hover-items .icons .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +416,7 @@ section {
   transition: all .4s ease-in-out;
 }
 
-.portfolios .portfolio-items .hover-items .icons .icon:hover i {
+.portfolio-container .portfolio-items .hover-items .icons .icon:hover i {
   color: var(--color-black);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -423,5 +426,71 @@ section {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3.5rem;
+}
+
+.contact-content .left-contact {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-top: 1.5rem;
+}
+
+.contact-content .left-contact p {
+  color: var(--color-grey-1);
+}
+
+.contact-content .right-contact {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-left: 3rem;
+}
+
+.contact-content .input-control {
+  margin: 1.5rem 0;
+}
+
+.contact-content .input-control input, .contact-content .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+
+.contact-content .input-control-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-content .input-control-1 :last-child {
+  margin-left: 1.5rem;
+}
+
+.contact-content .message-button {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--color-primary);
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-secondary);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

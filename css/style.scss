@@ -17,14 +17,13 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
-    --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3); 
+    --br-sm-2: 14px; 
 }
 
 body {
     background-color: var(--color-primary);
     font-family: 'Rubik', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
 }
@@ -193,7 +192,6 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
     h4 {
@@ -208,11 +206,14 @@ section {
     }
 }
 
-.skills-container .my-skills {
+.skills-container {
+    padding-top: 2rem;
+    .my-skills {
     text-align: center;
     font-size: 2rem;
     color: var(--color-grey-1);
     margin-bottom: 1rem;
+    }
 }
 
 .tech-skills {
@@ -224,6 +225,7 @@ section {
         height: 72px;
     }
     p {
+        font-size: 1rem;
         text-align: center;
         color: var(--color-grey-1);
     }
@@ -238,7 +240,7 @@ section {
     text-align: center;
 }
 
-.portfolios {
+.portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -296,4 +298,54 @@ section {
 .portfolio-items:hover .hover-items{
     opacity: 1;
     transform: scale(1);
+}
+
+.contact-content {
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact {
+        flex: 2;
+        margin-top: 1.5rem;
+        p {
+            color: var(--color-grey-1);
+        }
+    }
+    .right-contact {
+        flex: 3;
+        margin-left: 3rem;
+    }
+    .input-control {
+        margin: 1.5rem 0;
+        input, textarea {
+            border-radius: 30px;
+            font-weight: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            padding: .8rem 1.1rem;
+            outline: none;
+            border: none;
+            background-color: var(--color-grey-5);
+            width: 100%;
+            color: var(--color-white);
+            resize: none;
+        }
+    }
+    .input-control-1 {
+        display: flex;
+        :last-child {
+            margin-left: 1.5rem;
+        }
+    }
+    .message-button {
+        border-radius: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        color: var(--color-primary);
+        padding: .8rem 1.1rem;
+        outline: none;
+        border: none;
+        background-color: var(--color-secondary);
+        cursor: pointer;
+    }
 }
