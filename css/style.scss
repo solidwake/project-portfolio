@@ -309,6 +309,16 @@ section {
         p {
             color: var(--color-grey-1);
         }
+        .contact-icons {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            i:hover {
+                color: var(--color-secondary);
+                transition: all .4s ease-in-out;
+            }
+        }
     }
     .right-contact {
         flex: 3;
