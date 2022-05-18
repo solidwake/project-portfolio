@@ -8,7 +8,7 @@
 :root {
     --color-primary: #191d2b;
     --color-secondary: #10d3cc;
-    --color-white: #FFFFFF;
+    --color-white: #FFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
@@ -22,15 +22,15 @@
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary: #10d3cc;
-    --color-white: #191d2b;
+    --color-secondary: #EA5C2B;
+    --color-white: #000;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
+    --color-grey-5: #FFF;
     --color-grey-6: #12181b;
 }
 
@@ -40,9 +40,6 @@ body {
     font-size: 1.3rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
-    .main-content {
-        transition: all 4s ease-in-out;
-    }
 }
 
 a {
@@ -69,28 +66,32 @@ section {
 
 .section {
     transform: translateY(-100%);
-    transition: all 4s ease-in-out;
     background-color: var(--color-primary);
+    transition: all 4s ease-in-out;
 }
 
 .sec1 {
     display: none;
     transform: translateY(0) scale(1);
+    transition: all .4s ease-in-out;
 }
 
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
+    transition: all .4s ease-in-out;
 }
 
 .sec3 {
     display: none;
     transform: translateY(0) scale(1);
+    transition: all .4s ease-in-out;
 }
 
 .sec4 {
     display: none;
     transform: translateY(0) scale(1);
+    transition: all .4s ease-in-out;
 }
 
 .active {
@@ -203,17 +204,6 @@ section {
         font-weight: 700;
         span {
             color: var(--color-secondary);
-        }
-        .bg-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: var(--color-grey-5);
-            transition: all .4s ease-in-out;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size: 4.3rem;
         }
     }
 }
