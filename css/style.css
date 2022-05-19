@@ -554,22 +554,19 @@ section {
   .header-content {
     -ms-grid-columns: 2fr;
         grid-template-columns: 2fr;
+    min-height: 100%;
   }
   .header-content .right-header {
     -ms-grid-row: 1;
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
-    padding: 2rem;
   }
   .header-content .right-header .name {
     font-size: 2.5rem;
   }
   .header-content .right-header p {
     font-size: 1.5rem;
-  }
-  .left-header {
-    padding: .5rem 0 0 0;
   }
   .header-content .left-header .image {
     margin: 0 auto;
