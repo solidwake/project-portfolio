@@ -1,0 +1,52 @@
+@media screen and (max-width: 320px) {
+    header .header-content .right-header {
+        padding: 2rem;
+    }
+
+    .header-content {
+        grid-template-columns: 2fr;
+        .right-header {
+            grid-row: 1;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2rem;
+            .name {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .left-header {
+        padding: .5rem 0 0 0;
+    }
+
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 90%;
+        min-height: 37vh;
+    }
+
+    .theme-button {
+        display: none;
+    }
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 1rem 2rem;
+        .control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem .3rem;
+        }
+    }
+}
