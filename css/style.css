@@ -547,7 +547,7 @@ section {
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   header .header-content .right-header {
     padding: 2rem;
   }
@@ -574,11 +574,29 @@ section {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
-    min-height: 37vh;
+    height: 41vh;
   }
+}
+
+@media screen and (max-width: 430px) and (max-width: 395px) {
+  .header-content .left-header .image {
+    height: 37vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .theme-button {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-width: 369px) {
   .theme-button {
     display: none;
   }
+}
+
+@media screen and (max-width: 430px) {
   .controls {
     top: auto;
     bottom: 0;
