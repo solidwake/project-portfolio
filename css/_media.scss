@@ -1,3 +1,36 @@
+@media screen and (max-width: 1024px) and (max-height: 1368px) {
+    .header-content .right-header {
+        padding-right: 8rem;
+    }
+    .header-content .right-header .name {
+        font-size: 2.6rem;
+    }
+    .header-content .right-header p {
+        font-size: 1.7rem;
+    }
+    .header-content .left-header .image {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+    .header-content .right-header {
+        padding-right: 5rem;
+    }
+    .header-content .right-header .name {
+        font-size: 2.1rem;
+    }
+    .header-content .right-header p {
+        font-size: 1.1rem;
+    }
+    .header-content .left-header .image {
+        height: 80%;
+        width: 75%;
+    }
+}
+
+
 @media screen and (max-width: 460px) and (max-height: 915px) {
     header .header-content .right-header {
         padding: 2rem;
@@ -41,7 +74,7 @@
         }
     }
 
-    @media screen and (max-width: 375px) and (max-height: 667px) {
+    @media screen and (max-width: 375px) and (max-height: 853px) {
         .header-content .right-header .name {
             font-size: 2.1rem;
         }
