@@ -568,7 +568,7 @@ section {
     font-size: 2.5rem;
   }
   .about .about-container {
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
   }
   .about .about-container h4 {
     font-size: 1.5rem;
@@ -593,6 +593,15 @@ section {
   }
   .about .skills-container .tech-skills p {
     font-size: .8rem;
+  }
+  .portfolio {
+    padding: 3rem 5.5rem;
+  }
+  .portfolio .portfolio-container {
+    margin-top: 4rem;
+  }
+  .portfolio .portfolio-container .hover-items h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -684,6 +693,21 @@ section {
   }
   .about .skills-container .tech-skills p {
     font-size: .8rem;
+  }
+  .portfolio {
+    padding: 2rem;
+  }
+  .portfolio .main-title h2 {
+    font-size: 2.5rem;
+  }
+  .portfolio .portfolio-text {
+    font-size: 1.5rem;
+  }
+  .portfolio .portfolio-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 4rem;
+    margin-top: 1rem;
   }
 }
 
