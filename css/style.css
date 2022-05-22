@@ -245,7 +245,7 @@ section {
 }
 
 .header-content .right-header .name {
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .header-content .right-header .name span {
@@ -255,6 +255,7 @@ section {
 .header-content .right-header p {
   margin-top: 1.5rem;
   line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 .header-content .image {
@@ -351,7 +352,7 @@ section {
 }
 
 .tech-skills p {
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: center;
   color: var(--color-grey-1);
 }
@@ -534,6 +535,15 @@ section {
   margin-left: 1.5rem;
 }
 
+.contact-content form .button-justify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .contact-content .message-button {
   border-radius: 30px;
   font-weight: inherit;
@@ -547,7 +557,13 @@ section {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) and (max-height: 1368px) {
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1486px) and (max-height: 1368px) {
   .header-content .right-header {
     padding-right: 8rem;
   }
@@ -708,6 +724,50 @@ section {
         grid-template-columns: repeat(1, 1fr);
     padding-bottom: 4rem;
     margin-top: 1rem;
+  }
+  .contact {
+    padding: 2rem;
+  }
+  .contact .main-title h2 {
+    font-size: 2.5rem;
+  }
+  .contact .contact-container .contact-content .right-contact {
+    padding: 2rem;
+  }
+  .contact .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1.5rem;
+  }
+  .contact .contact-content .left-contact {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .contact .contact-content .left-contact .contact-icons {
+    margin-top: 2rem;
+  }
+  .contact .contact-content .right-contact {
+    padding: 0;
+    margin: 0;
+  }
+  .contact .contact-content .right-contact .contact-form .input-control-1 {
+    display: -ms-grid;
+    display: grid;
+  }
+  .contact .contact-content .right-contact .contact-form .input-control-1 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .contact .contact-content .right-contact .contact-form .button-justify {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

@@ -170,7 +170,7 @@ section {
         justify-content: center;
         padding-right: 18rem;
         .name {
-            font-size: 3rem;
+            font-size: 3.3rem;
             span {
                 color: var(--color-secondary);
             }
@@ -178,6 +178,7 @@ section {
         p {
             margin-top: 1.5rem;
             line-height: 2rem;
+            font-size: 1.5rem;
         }
     }
     .image {
@@ -248,7 +249,7 @@ section {
         height: 72px;
     }
     p {
-        font-size: 1rem;
+        font-size: .8rem;
         text-align: center;
         color: var(--color-grey-1);
     }
@@ -370,6 +371,10 @@ section {
             margin-left: 1.5rem;
         }
     }
+    form .button-justify {
+        display: flex;
+        justify-content: end;
+    }
     .message-button {
         border-radius: 30px;
         font-weight: inherit;
@@ -382,6 +387,12 @@ section {
         background-color: var(--color-secondary);
         cursor: pointer;
     }
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 @import './media';
