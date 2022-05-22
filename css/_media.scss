@@ -57,6 +57,12 @@
     }
 }
 
+@media screen and (min-width: 912px) and (max-width: 1024px) {
+    .contact {
+        padding: 3rem 9rem;
+    }
+}
+
 @media screen and (max-width: 820px) and (max-height: 1180px) {
     .header-content .right-header {
         padding-right: 5rem;
@@ -71,6 +77,43 @@
         height: 80%;
         width: 75%;
     }
+    .contact {
+        padding: 4rem;
+        .main-title h2 {
+            font-size: 2.5rem;
+        }
+        .contact-container .contact-content .right-contact {
+            padding: 2rem;
+        }
+        .contact-content {
+            flex-direction: column;
+            padding-top: 1.5rem;
+            .left-contact {
+                margin-top: 0;
+                text-align: center;
+                font-size: 1.2rem;
+                .contact-icons {
+                    margin-top: 2rem;
+                }
+            }
+            .right-contact {
+                padding: 0;
+                margin: 0;
+                .contact-form .input-control-1 {
+                    display: grid;
+                }
+                .contact-form .input-control-1 :last-child {
+                    margin-left: 0;
+                    margin-top: 1.5rem;
+                }
+                .contact-form .button-justify {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) and (min-height: 1366px) {
